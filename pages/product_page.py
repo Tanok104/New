@@ -1,4 +1,4 @@
-from .locators import BasePageLocators
+from .locators import BasePageLocators, CardPageLocators
 from .base_page import BasePage
 
 
@@ -37,3 +37,8 @@ class PageObject(BasePage):
 
     def should_be_disappeared(self):
         assert self.is_disappeared(*BasePageLocators.SUCCESS_MESSAGE), "Success message is not disappeared"
+
+
+
+
+

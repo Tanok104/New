@@ -16,10 +16,18 @@ class BasePageLocators():
     MAIN_BOOK_NAME = (By.CSS_SELECTOR, ".product_main>h1")
     BOOK_PRICE = (By.CSS_SELECTOR, "p.price_color")
     ALERT_BOOK_NAME = (By.CSS_SELECTOR, ".alertinner strong")
-    # SHOW_THE_CARD = (By.CSS_SELECTOR, "div.alertinner>p>a.btn.btn-info")
-    # NAME_OF_THE_GOOD_IN_CARD = (By.CSS_SELECTOR, ".col-sm-4>h3")
     BASKET_PRICE = (By.CSS_SELECTOR, ".alertinner p strong")
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div.alertinner")
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    WATCH_THE_CARD_BUTTON = (By.CSS_SELECTOR, "span.btn-group>a.btn.btn-default")
+
+
+class CardPageLocators():
+    BASKET_FORMSET = (By.CSS_SELECTOR, "#basket_formset")
+
+
+
 
 
 
