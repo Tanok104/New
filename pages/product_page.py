@@ -31,3 +31,9 @@ class PageObject(BasePage):
         assert basket_price.text == book_price, "basket price is {}, but book price is {}".format(basket_price.text,
                                                                                                   book_price)
 
+    def should_not_be_successful_message(self):
+        assert self.is_not_element_present(
+            *BasePageLocators.SUCCESS_MESSAGE), "Success message is present, but should not be"
+
+    def should_be_disappeared(self):
+        assert self.is_disappeared(*BasePageLocators.SUCCESS_MESSAGE), "Success message is not disappeared"
